@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tea Leaf Defense (TLD)</title>
+    <style>
+      a,
+      .nft {
+        cursor: pointer;
+      }
+      .boxnft {
+        display: inline-block;
+      }
+      .nobreed {
+        opacity: 0.5;
+      }
+      .hide {
+        display: none;
+      }
+    </style>
+    <script src="https://aloycwl.github.io/js/cdn/web3.min.js"></script>
+    <script src="https://aloycwl.github.io/js/cdn/jquery.min.js"></script>
+    <script src="https://aloycwl.github.io/twc_frontend/tld/js/abi.js"></script>
+    <script defer src="js/load.js"></script>
+  </head>
+  <body>
+    <a id="connect" onclick="load()" class="hide">Connect<br /></a>
+    <b><p id="name">Tea Leaf Defense</p></b>
+    <div id="root" class="hide">
+      <select id="items">
+        <option value="0">Sun</option>
+        <option value="1">Ocean</option>
+        <option value="2">Earth</option>
+        <option value="3">Plantation</option>
+        <option value="4">Cafe</option>
+        <option value="5">Swarm</option>
+        <option value="6">Fumigation</option>
+      </select>
+      <a id="mint" onclick="MINT()">MINT</a> /
+      <a id="mint" onclick="CLAIM()">Claim Resources</a> /
+      <a id="mint" onclick="ATTACK()">Attack</a>
+      <input id="txtAtk" placeholder="Enter address here" size="55" />
+      <br />
+      <p id="res"></p>
+    </div>
+  </body>
+</html>
